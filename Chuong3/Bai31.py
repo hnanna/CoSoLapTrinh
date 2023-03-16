@@ -1,14 +1,10 @@
-import math
-print("Nhap a,b,c:")
-a=int(input("a="))
-b=int(input("b="))
-c=int(input("c="))
-d=b*b-4*a*c
-if d<0:
-    print("Phuong trinh vo nghiem!!!")
-elif d==0:
-    print("Phuong trinh co nghiem kep x1, x2=", (-b/2*a))
+a=float(input("a="))
+b=float(input("b="))
+c=float(input("c="))
+if (a+b)>c and (a+c)>b and (b+c)>a :
+    import math
+    p=(a+b+c)/2
+    s=math.sqrt(p*(p-a)*(p-b)*(p-c))
+    print("Dien tich=",(round(s,3)),sep='')
 else:
-    print("Phuong trinh co hai nghiem:\n")
-    print("x1=", (-b + math.sqrt(d)/(2*a)))
-    print("x2=", (-b - math.sqrt(d)/(2*a)))
+    print("Khong hop le")
