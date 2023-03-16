@@ -4,7 +4,7 @@ h=float(input(""))
 tb=(t*2+l*3+h)/6
 if tb<3:
     print("Kem")
-elif tb<5:
+if 3<=tb<5:
     print("Yeu")
 if 5<=tb<6:
     print("Trung binh")
