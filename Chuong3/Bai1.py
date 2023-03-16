@@ -6,9 +6,9 @@ if max<b:
     max=b;
 if max<c:
     max=c;
-print("SLN="+str(max))
+print("SLN=",max,sep='')
 if min>b:
     min=b;
 if min>c:
     min=c;
-print("SNN="+str(min))
+print("SNN=",min,sep='')
